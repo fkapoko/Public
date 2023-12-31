@@ -5,8 +5,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# oh_my_zsh theme
 export ZSH="$HOME/.oh-my-zsh"
+
+# powerlevel10k - a zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 plugins=(
     git
@@ -20,4 +24,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Run code . in the terminal opens visual studio
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+############################# Aliases #############################
+alias lt="ls -ltrha"
+alias ll="ls -lh"
+# alias lta="ls -ltrha"
+alias usefulcommands="cat ~/.useful_commands"
+alias useful_commands="cat ~/.useful_commands"

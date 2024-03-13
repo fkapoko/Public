@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 ############################# Aliases #############################
-alias lt="ls -ltrha"
+alias lt="ls -ltrh"
 alias ll="ls -lh"
 # alias lta="ls -ltrha"
 alias usefulcommands="cat ~/.useful_commands"
